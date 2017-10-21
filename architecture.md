@@ -3,7 +3,7 @@
     Master node runs following services
     *    API Server - source of truth on state of the k8 cluster to the outside world, including kubectl. 
     *    Scheduler - finds the worker node to run the container.
-    *    Controller manager - responsible for maintaing state of the K8 cluster. 
+    *    Controller manager - responsible for maintaing state of the K8 cluster, reconcile the actual state of the cluster with desired state.. 
 2. Worker Nodes
     Each worker node runs following processes
     * Kubelet - recieves request from master to run containers and watches them on the local worker node.
