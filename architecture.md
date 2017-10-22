@@ -12,3 +12,6 @@
     etcd form the central key value store, where the state of the Kubernetes cluster is kept. etcd itself runs as a cluster. API server is the one that reads/writes data to etcd. All other services running either on master or worker nodes use API to query and update state of containers.
 
 Each of the above services can run as seperate processes on a node or as a containers themselves.
+
+
+**POD:** pods are compute units managed by k8, each pod is collection of colocated containers with some associated volumes, all containers ina pod communicate over localhost.
